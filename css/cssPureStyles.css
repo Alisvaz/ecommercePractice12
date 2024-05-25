@@ -1,0 +1,218 @@
+body {
+    width: 100;
+    font-size: 15px;
+    font-weight: 300;
+    color: #999;
+    font-family: "lexend", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+img {
+    width: 100px;
+}
+
+header {
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #333;
+    box-sizing: border-box; /*cuando se desfazan los elemento */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header__icons {
+    width: 35px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* header i img {
+    width: 100%;
+
+} */
+
+.main__banner {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    background-image: url(../img/adidasbg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    background-position-y: 60%;
+}
+
+.main__banner h2 {
+    width: 100%;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.main__banner p {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 25px;
+    opacity: 0.5px;
+}
+
+.main__products {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.main__products article {
+    cursor: pointer;
+    text-align: center;
+}
+
+.main__products img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+
+}
+
+.main__products h2 {
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.main__products p {
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+.main__cart {
+    width: 500px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 25px;
+    height: 100%;
+    position: fixed;
+    right: -100%;
+    top: 100px;
+    box-shadow: none; /*colocar valor */
+}
+
+.main__cart h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.main__cart div {
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.main__cart div img {
+    width: 100px;
+}
+
+.main__cart div i {
+    width: 60px;
+    cursor: pointer;
+}
+
+.main__cart--typefont {
+    font-weight: 500;
+}
+
+.delete-img {
+    width: 100%;
+}
+
+@media screen and (max-width: 51.25em) {
+    header {
+        padding: 1rem;
+    }
+
+    header > img {
+        width: 60px;
+    }
+
+    header i {
+        width: 30px;
+    }
+
+    .main__products {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .main__products img {
+        width: 150px;
+
+    }
+    .main__cart {
+        width: 400px;
+        top: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main__banner {
+        padding: 30px 0;
+    }
+    
+    .main__banner h2 {
+        font-size: 18px;
+    }
+    .main__banner p {
+        font-size: 16px;
+    }
+
+    .main__products {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .main__products img {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .main__products h3,
+    .main__products p {
+    padding: 0 10px;
+}
+    .main__cart {
+        width: 100%;
+        box-shadow: none;
+
+}
+    .main__cart h2 {
+        padding: 15px 0;
+    }
+    .main__cart div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__cart img {
+        width: 100px;
+    }
+
+    .main__cart div p:nth-child(3),
+    .main__cart div i  {
+        align-self: center;
+
+    }
+    .main__cart p {
+        margin: 0;
+    }
+}
