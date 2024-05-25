@@ -40,10 +40,22 @@ body {
     color: $gray;
     font-family: "lexend", Arial, Helvetica, sans-serif;
     margin: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(174deg, rgba(255,255,255,1) 0%, rgb(214, 214, 214) 100%);
 }
 
 img {
     width: 100px;
+    border-radius: 5px;
+    outline: 1px solid #ffffff;
+    transition: outline 1s ease 0s;
+    
+    &:hover {
+
+        transition: 1ms;
+        outline: 5px solid #c0c0c0;
+
+    }
 }
 
 header {
